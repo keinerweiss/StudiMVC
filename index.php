@@ -123,8 +123,11 @@ if($_GET['format'] == 'json') {
 	 * umlenken.
 	 */
 	if($controller->redirect) {
-		list($toModule,$toController,$toAction,$toParams) = each($controller->redirect[0]);
-		if(count($controller->redirect[0])>=3) {
+		
+		list($toModule,$toController,$toAction) = $controller->redirect;
+		
+		if(count($controller->redirect)>=3) {
+			$toParams = isset($controller->redirect[3]) ? $controller->redirect[3] : '';
 			H::redirect($toModule,$toController,$toAction,@$toParams);
 		}
 		exit;
