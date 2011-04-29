@@ -12,7 +12,7 @@ Config::init(array(
 	'relDir' => $dirWeb,
     
 	'db' => array(
-		'enabled' => 0,
+		'enabled' => false,
 		'host' => 'localhost',
 		'user' =>  'root',
 		'password' => '',
