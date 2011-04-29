@@ -53,6 +53,7 @@ class MySQL {
 				$rows[] = $row;
 			}
 		}
+		$res->free();
 		return $rows;
 	}
 	
