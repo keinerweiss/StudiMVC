@@ -1,3 +1,5 @@
-<h2>Index</h2>
+<h2>Example</h2>
 
-Hello <?=$world?>
+<? include('_errors.php') ?>
+
+<p>The answer is <?=$magic?>!</p>
