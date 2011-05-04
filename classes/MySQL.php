@@ -99,7 +99,7 @@ class MySQL {
 				if(strlen($types)) {
 				  $args = $values;
 				  array_unshift($args,$types);
-				  call_user_method_array("bind_param", $stmt, $args);
+				  call_user_func_array(array($stmt,"bind_param"), $args);
 				}		
 			} else {
 				throw new Exception('MYSQL: Statement could not be created');
