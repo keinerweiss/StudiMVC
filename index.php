@@ -144,6 +144,7 @@ if($_GET['format'] == 'json') {
 	 * $data['name'] -> $name
 	 */
 	extract($controller->getData());
+	$errors = $controller->getErrors();
 	/**
 	 * Inhaltsbereich erzeugen und zwischenspeichern
 	 */
