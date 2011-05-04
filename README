@@ -11,7 +11,8 @@ classes which the students then use for exercises.
 
 This way everybody knows what the meaning and the purpose of the code is. 
 StudiMVC has grown a bit. But it's not "over-engineered". The purpose is to 
-have a secure, fast, readable and easily understandable architecture.
+have a secure, fast, readable and easily understandable application 
+architecture.
 
 To some it might appear too straight forward and too less abstracted, but 
 that's what makes it easy to understand.
